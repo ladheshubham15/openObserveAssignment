@@ -41,7 +41,10 @@ export default async function globalSetup(config) {
 
   // 4. Upload logs.json
   console.log("Uploading logs.json...");
-  const credPair = "root@example.com:Complexpass#123";
+  if(!process.env.Email && !process.env.PASSWORD){
+    throw new Error("Credentials are not available")
+  }
+  const credPair = `${process.env.Email}:${process.env.PASSWORD}`;
   const encodedCreds = Buffer.from(credPair).toString('base64');
   const logsFilePath = path.join(process.cwd(), 'logs.json');
 
