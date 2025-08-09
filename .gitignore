@@ -1,0 +1,12 @@
+
+# Playwright
+node_modules/
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
+data/
+openObserve.exe
+openobserve-v0.15.0-rc4-windows-amd64.zip
+install.ps1
+eng.traineddata
