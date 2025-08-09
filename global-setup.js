@@ -18,6 +18,8 @@ export default async function globalSetup(config) {
     detached: true,
     stdio: 'ignore'
   });
+  // Store PID for teardown
+  fs.writeFileSync('server.pid', serverProcess.pid.toString());
   serverProcess.unref();
 
   // 3. Wait for server to be ready
