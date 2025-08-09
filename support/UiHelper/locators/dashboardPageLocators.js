@@ -1,0 +1,16 @@
+export const dashBoardLocators = {
+    addToDashboardButton: 'button:has-text("Add To Dashboard")',
+    newDashboardButton: '[data-test="dashboard-dashboard-new-add"]',
+    dashboardName: '[data-test="add-dashboard-name"]',
+    dashboardDescription: '[data-test="add-dashboard-description"]',
+    dashboardSubmit: '[data-test="dashboard-add-submit"]',
+    panelTitle: '[data-test="metrics-new-dashboard-panel-title"]',
+    updateSettingsButton: '[data-test="metrics-schema-update-settings-button"]',
+    sidebar: '[data-test="dashboard-sidebar"]',
+    applyButton: '[data-test="dashboard-apply"]',
+    savePanelButton: '[data-test="dashboard-panel-save"]',
+    EditPanelOption: '[data-test="dashboard-edit-panel"]',
+    connectNullValuesToggle:'[data-test="dashboard-config-connect-null-values"] div',
+    topNSeriesField: '[data-test="dashboard-config-top_results"]',
+    addOtherSeriesToggle: `[aria-label="Add 'others' series"]`,
+}
