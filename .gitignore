@@ -10,3 +10,6 @@ openObserve.exe
 openobserve-v0.15.0-rc4-windows-amd64.zip
 install.ps1
 eng.traineddata
+api-tests/__pycache__/
+api-tests/data
+api-tests/venv
