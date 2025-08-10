@@ -34,8 +34,8 @@ export default defineConfig({
     trace: 'on',
   },
 
-   globalSetup: path.resolve('./global-setup.js'),
-   globalTeardown: path.resolve('./global-teardown.js'),
+  globalSetup: path.resolve('./global-setup.js'),
+  globalTeardown: path.resolve('./global-teardown.js'),
 
   /* Configure projects for major browsers */
   projects: [

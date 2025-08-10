@@ -1,13 +1,13 @@
-import { expect } from '@playwright/test';
+import { expect } from '@playwright/test'
 import {loginLocators} from '../locators/loginPageLocators'
 
 export default class LoginPage {
   constructor(page) {
-    this.page = page;
+    this.page = page
   }
 
   async goto() {
-    await this.page.goto('/web/login');
+    await this.page.goto('/web/login')
   }
 
   async login(username, password) {

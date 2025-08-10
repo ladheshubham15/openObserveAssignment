@@ -5,7 +5,7 @@ const Tesseract = require('tesseract.js')
 
 export default class DashboardPage {
     constructor(page) {
-        this.page = page;
+        this.page = page
     }
 
     async addToDashboard() {
@@ -25,7 +25,7 @@ export default class DashboardPage {
     }
 
     async clickOnEditDashboardDropDown(panelName) {
-        await this.page.locator(`[data-test="dashboard-edit-panel-${panelName}-dropdown"]`).click();
+        await this.page.locator(`[data-test="dashboard-edit-panel-${panelName}-dropdown"]`).click()
     }
 
     async editPanelAndToggleConnectNullValues(panelName) {
@@ -33,7 +33,7 @@ export default class DashboardPage {
         await this.page.locator(dashBoardLocators.EditPanelOption).click()
         await this.page.locator(dashBoardLocators.sidebar).click()
         await this.page.locator(logPageLocators.lineChartItem).click()
-        await this.page.locator(dashBoardLocators.connectNullValuesToggle).first().click();
+        await this.page.locator(dashBoardLocators.connectNullValuesToggle).first().click()
         await this.page.locator(dashBoardLocators.applyButton).click()
         await this.page.locator(dashBoardLocators.savePanelButton).click()
     }
@@ -58,11 +58,11 @@ export default class DashboardPage {
 
      async getTextFromElementScreenshot() {
         const lang = 'eng'
-        const tempPath = 'canvas_screenshot.png';
+        const tempPath = 'canvas_screenshot.png'
 
         // Capture only element screenshot
         const elementLocator = await this.page.locator('canvas').first()
-        await elementLocator.screenshot({ path: tempPath });
+        await elementLocator.screenshot({ path: tempPath })
 
         // Run OCR on the screenshot
         const { data: { text } } = await Tesseract.recognize(tempPath, lang)

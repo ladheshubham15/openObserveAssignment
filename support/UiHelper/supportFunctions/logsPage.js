@@ -1,7 +1,7 @@
-import { logPageLocators } from "../locators/logsPageLocators";
+import { logPageLocators } from "../locators/logsPageLocators"
 export default class LogsPage {
   constructor(page) {
-    this.page = page;
+    this.page = page
   }
 
   async openLogsStream(stream) {

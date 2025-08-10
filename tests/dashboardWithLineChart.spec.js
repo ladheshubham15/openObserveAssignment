@@ -1,7 +1,7 @@
-import { test, expect } from '@playwright/test';
+import { test, expect } from '@playwright/test'
 import LoginPage from '../support/UiHelper/supportFunctions/loginPage'
 import LogsPage from '../support/UiHelper/supportFunctions/logsPage'
-import DashboardPage from '../support/UiHelper/supportFunctions/dashboardPage';
+import DashboardPage from '../support/UiHelper/supportFunctions/dashboardPage'
 
 test.describe('Dashboard Line Chart Automation', () => {
 
