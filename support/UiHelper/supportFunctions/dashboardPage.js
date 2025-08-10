@@ -34,6 +34,8 @@ export default class DashboardPage {
         await this.page.locator(dashBoardLocators.sidebar).click()
         await this.page.locator(logPageLocators.lineChartItem).click()
         await this.page.locator(dashBoardLocators.connectNullValuesToggle).first().click()
+        //verify if Connect null value toggle is correctly actiavated
+        await expect(this.page.locator('.q-toggle__inner--truthy').last().locator('..')).toContainText('Connect null values')
         await this.page.locator(dashBoardLocators.applyButton).click()
         await this.page.locator(dashBoardLocators.savePanelButton).click()
     }
@@ -45,6 +47,8 @@ export default class DashboardPage {
         await this.page.locator(logPageLocators.lineChartItem).click()
         await this.page.locator(dashBoardLocators.topNSeriesField).fill(topNseriesNumber)
         await this.page.locator(dashBoardLocators.addOtherSeriesToggle).click()
+        //verify if Add Others series toggle is correctly actiavated
+        await expect(this.page.locator('.q-toggle__inner--truthy').nth(1).locator('..')).toContainText("Add 'others' series")
         await this.page.locator(dashBoardLocators.applyButton).click()
         await this.page.locator(dashBoardLocators.savePanelButton).click()
     }

@@ -111,7 +111,7 @@ pytest -v test_search_api.py
 8. Verify chart rendering & canvas loading after enabling **Connect Null Values**.  
 9. Edit dashboard → Enable **Others Series** setting.  
 10. Verify chart rendering & canvas loading after enabling **Others Series**.  
-11. Validate **Others Series** using canvas screenshot & parsed text.
+11. Validate **Others Series** using canvas screenshot & parsed text from screenshot.
 
 ---
 
